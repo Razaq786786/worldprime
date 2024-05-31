@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <link rel="stylesheet" href="styl.css">
+    <style type="text/css">
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.login-box {
+    width: 300px;
+    padding: 40px;
+    background-color: #fff;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    background-color: blue;
+}
+
+.login-box:hover {
+    transform: rotateY(370deg);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Forget Password</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Forget Password" class="h">
+                </div>
+                <button type="submit" href>Forget</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
